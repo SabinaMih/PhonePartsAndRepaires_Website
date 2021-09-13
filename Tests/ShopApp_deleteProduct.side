@@ -1,0 +1,133 @@
+{
+  "id": "e62056b6-8ff9-47d0-ac81-f4e118808711",
+  "version": "2.0",
+  "name": "ShopApp_deleteProduct",
+  "url": "http://127.0.0.1:8000",
+  "tests": [{
+    "id": "0599c57a-7dd2-4297-8d14-bd54a50b4b7c",
+    "name": "deleteProduct",
+    "commands": [{
+      "id": "bfbc6d9c-cf30-443c-ab9b-63d83f590332",
+      "comment": "",
+      "command": "open",
+      "target": "/admin/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db434061-f487-4646-b72d-d1e38098b5df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87de388f-a349-40c9-87fe-0f9c6ed67023",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=.model-product > th > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Products')]", "xpath:link"],
+        ["xpath=//div[@id='content-main']/div[4]/table/tbody/tr[2]/th/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/shop/product/')]", "xpath:href"],
+        ["xpath=//div[4]/table/tbody/tr[2]/th/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f27e986-8d3c-4f9e-ac52-98c59f16663f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .action-select",
+      "targets": [
+        ["css=tr:nth-child(2) .action-select", "css:finder"],
+        ["xpath=(//input[@name='_selected_action'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='result_list']/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12b2ca27-27a2-423f-aaa9-6226efe219d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=action",
+      "targets": [
+        ["name=action", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='action']", "xpath:attributes"],
+        ["xpath=//form[@id='changelist-form']/div[2]/label/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e8b2881-47b7-40a0-84d9-7294843e2fbb",
+      "comment": "",
+      "command": "select",
+      "target": "name=action",
+      "targets": [],
+      "value": "label=Delete selected products"
+    }, {
+      "id": "dc22efbd-bf4c-4548-895b-535390eca8d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=action",
+      "targets": [
+        ["name=action", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='action']", "xpath:attributes"],
+        ["xpath=//form[@id='changelist-form']/div[2]/label/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1022e92c-72a2-4cab-9ea6-a8fa877f4e93",
+      "comment": "",
+      "command": "click",
+      "target": "name=index",
+      "targets": [
+        ["name=index", "name"],
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@name='index']", "xpath:attributes"],
+        ["xpath=//form[@id='changelist-form']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Go')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e9740d3-a84a-4517-afc6-9754221b6b9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Yes, I’m sure']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/div/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41721d02-6e66-43e3-bfc1-f8fc761e83b6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.success",
+      "targets": [
+        ["css=.success", "css:finder"],
+        ["xpath=//div[@id='main']/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Successfully deleted 1 product.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9dd30b44-8468-497a-8da9-d010c7eeb9ca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0599c57a-7dd2-4297-8d14-bd54a50b4b7c"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}

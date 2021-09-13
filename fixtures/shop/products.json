@@ -1,0 +1,444 @@
+[
+    {
+        "model": "shop.product",
+        "pk": "22ac0a70-ae2b-4b78-ade1-359ffda988c8",
+        "fields": {
+            "name": "APPLE IPHONE SE 2020 64GB",
+            "description": "Lots to love, less to spend. The iPhone SE 2020 model packs the processing power of the iPhone 11 into the classic design of the iPhone you know and love, the Home button included. With a durable and compact body and advanced photo processing abilities, it's the perfect choice for those who don't need to turn up to 11.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "489.99",
+            "image": "product/iphone-se-2020-black-front_4mZrOen.png",
+            "stock": 12,
+            "available": true,
+            "created": "2021-02-26T22:40:53.241Z",
+            "updated": "2021-02-26T22:40:53.241Z",
+            "count_sold": 0,
+            "slug": "APPLE-IPHONE-SE-2020-64GB"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "3b3da2d4-b030-47a7-acb5-0ca3edec513a",
+        "fields": {
+            "name": "Iphone 12 PRO MAX",
+            "description": "128 GB",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "1600.00",
+            "image": "product/iphone12PROMAX_3oUr8SW.jpg",
+            "stock": 10,
+            "available": true,
+            "created": "2021-02-17T20:47:47.061Z",
+            "updated": "2021-02-17T20:47:47.061Z",
+            "count_sold": 0,
+            "slug": "iphone_12_pro_max"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "40c0b8a3-66c2-46ff-ae57-291ba122c6d5",
+        "fields": {
+            "name": "SAMSUNG GALAXY A51",
+            "description": "Capture the world as you see it. The Samsung Galaxy A51 features a quad-camera system with the macro lens so you can get truly up close to the action. On its 6.5-inch Infinity-O display, your photos and videos look crisp, sharp, and colorful. Plus its high capacity 4,000mAh battery keeps you going for longer between charges.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "299.99",
+            "image": "product/samsung-galaxy-a51-black-front_P3X59mE.png",
+            "stock": 15,
+            "available": true,
+            "created": "2021-02-26T22:35:27.523Z",
+            "updated": "2021-02-26T22:35:27.523Z",
+            "count_sold": 0,
+            "slug": "SAMSUNG-GALAXY-A51"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "69529183-5af9-4162-9eb4-80fb04f94840",
+        "fields": {
+            "name": "SAMSUNG GALAXY S21 5G 128GB",
+            "description": "The ultimate in self-expression. Make every moment epic with the next generation camera and video. Create high-res stills with 8K Video Snap and get share-ready shots first time, every time with Single Take. The Galaxy S21 is unashamedly different, with sleek looks and stylish colours.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "799.99",
+            "image": "product/samsung-galaxy-s21-phantom-grey-2up-hq_Ue1214z.png",
+            "stock": 15,
+            "available": true,
+            "created": "2021-02-26T22:31:18.619Z",
+            "updated": "2021-02-26T22:49:51.302Z",
+            "count_sold": 0,
+            "slug": "SAMSUNG-GALAXY-S21-5G-128GB"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "6b0b6428-7167-4165-9e3b-f4399a872cf6",
+        "fields": {
+            "name": "APPLE IPHONE XR 64GB",
+            "description": "Brilliant. In every way. Powered by the same A12 processor as the iPhone Xs, the iPhone XR features one of the most advanced LCD screens ever seen on a smartphone. True to life colors stretch all the way to the very edges of your phone, which is itself crafted from glass and aerospace-grade aluminum. A single-lens wide-angle camera gives you the power of portrait mode.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "549.99",
+            "image": "product/iphone-xr-black-front_21hh3Tk.png",
+            "stock": 15,
+            "available": true,
+            "created": "2021-02-26T22:42:20.883Z",
+            "updated": "2021-02-26T22:42:20.883Z",
+            "count_sold": 0,
+            "slug": "APPLE-IPHONE-XR-64GB"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "771f732f-9c71-464c-8a09-925b378e3e56",
+        "fields": {
+            "name": "S PEN Note 9",
+            "description": "Great tool for Samsung note 9",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "120.00",
+            "image": "product/31NOfbmTSWL._AC__eNLfnPV_4L4vcfj.jpg",
+            "stock": 14,
+            "available": true,
+            "created": "2021-03-19T10:03:25.511Z",
+            "updated": "2021-03-19T23:43:01.499Z",
+            "count_sold": 1,
+            "slug": "SPen-Samsung-Note9"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "781f6568-c7e8-4384-9501-ed701df5b0da",
+        "fields": {
+            "name": "SAMSUNG GALAXY S20 FE 4G",
+            "description": "All you want, to do all you love. The Samsung Galaxy S20 FE 4G is an unexpected kind of phone made for the social generation. ItÆs packed with the latest innovations. It looks the part with a choice of vibrant colours, all featuring a sleek, matte finish. ItÆs got a state-of-the-art Triple Lens Camera, with some of our most loved S20 pro-grade camera features.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "529.99",
+            "image": "product/samsung-galaxy-s20-fe-navy-front-hq_0bJLeu1.png",
+            "stock": 10,
+            "available": true,
+            "created": "2021-02-26T22:34:05.733Z",
+            "updated": "2021-02-26T22:50:06.951Z",
+            "count_sold": 0,
+            "slug": "SAMSUNG-GALAXY-S20-FE-4G"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "83d86494-750b-4c9d-8705-9034847fce79",
+        "fields": {
+            "name": "Samsung Galaxy Note 9",
+            "description": "New Note, new S-Pen\r\nThe Galaxy Note 9 is packing a new 10nm CPU, which is most likely SamsungÆs latest Exynos 9810 chip. ItÆs capable of pulling down 1.2 gigabits/second under the right network conditions, and thatÆs not considering the raw horsepower that the phone will have locally. It will pair with either 6GB or 8GB of RAM, depending on your model, and a massive 4,000mAh battery for all-day power. Usually, we have to complain about companies cutting corners, but I donÆt think Samsung did that this time.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "900.00",
+            "image": "product/galaxy-note-9_IU22QjU.jpg",
+            "stock": 6,
+            "available": true,
+            "created": "2021-02-26T22:29:46.228Z",
+            "updated": "2021-03-21T22:20:42.295Z",
+            "count_sold": 4,
+            "slug": "Samsung-Galaxy-Note-9"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "92798791-c596-4d3c-81b4-14c163cd6fd9",
+        "fields": {
+            "name": "OPPO A53",
+            "description": "Fast and smooth, with a generous 6.5-inch Neo-Display with a 90Hz refresh rate for fluid scrolling. Perfect for gaming and movies. The Oppo A53 also packs a triple camera system to give professional-looking photos, plus a long-lasting battery that's fast-charge compatible.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "139.99",
+            "image": "product/oppo-a53-front-black-hq_VZ2cHE0.png",
+            "stock": 15,
+            "available": true,
+            "created": "2021-02-26T22:39:15.336Z",
+            "updated": "2021-02-26T22:39:15.336Z",
+            "count_sold": 0,
+            "slug": "OPPO-A53"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "aa3dbd57-c440-45f8-a34a-1e6a0a454302",
+        "fields": {
+            "name": "SAMSUNG GALAXY A12",
+            "description": "More display means more room to play. The Galaxy A21 features a generous 6.5-inch HD+ Infinity-V screen that makes everything appear sharp and clear. Plus the quad-camera system gives you wide-angle, macro, and portrait photo abilities. With a long-lasting battery to keep you going all day long.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "189.99",
+            "image": "product/samsung-galaxy-a12-black-front-hq_yR7YgXn.png",
+            "stock": 16,
+            "available": true,
+            "created": "2021-02-26T22:44:30.011Z",
+            "updated": "2021-02-26T22:48:13.415Z",
+            "count_sold": 0,
+            "slug": "SAMSUNG-GALAXY-A12"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "baacf487-8cb4-4e1d-b193-1bd3eed0686b",
+        "fields": {
+            "name": "SAMSUNG GALAXY S21 ULTRA 5G 128GB",
+            "description": "ItÆs epic in every way. The Galaxy S21 Ultra 5G is the ultimate in self-expression with a class-leading quad rear camera array. Features SamsungÆs brightest Dynamic AMOLED 2x display with 120Hz refresh rate for silky smooth scrolling and striking color. Plus game-changing S Pen support.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "1299.99",
+            "image": "product/samsung-galaxy-s21-ultra-phantom-black-2up-hq_LWwNdD9.png",
+            "stock": 9,
+            "available": true,
+            "created": "2021-02-26T22:36:52.839Z",
+            "updated": "2021-02-26T22:37:43.001Z",
+            "count_sold": 0,
+            "slug": "SAMSUNG-GALAXY-S21-ULTRA-5G-128GB"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "d63caa3d-57ea-4f87-b4a4-30d2f769f828",
+        "fields": {
+            "name": "NOKIA 1.3",
+            "description": "Ready, set, GO with the Nokia 1.3. Featuring a generous and bright 5.71-inch HD screen plus AI camera enhancements that let you take snaps even in low light. Plus Android Go edition with guaranteed updates and a long-lasting 3,000 mAh battery. A perfect starter or back-up phone.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "99.99",
+            "image": "product/nokia13Charcoal.png_NpO2bJN.png",
+            "stock": 5,
+            "available": true,
+            "created": "2021-03-03T18:41:16.396Z",
+            "updated": "2021-03-03T19:44:37.962Z",
+            "count_sold": 0,
+            "slug": "NOKIA-13"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "e5759af8-1fb2-4645-8be0-dd8e24a6f949",
+        "fields": {
+            "name": "GOOGLE PIXEL 4A",
+            "description": "Packed with all the things you want from a phone. The Pixel 4a lets you take photos like a pro thanks to Night Sight and HDR. The adaptive battery adjusts to best suit you, letting you go longer between charges. Plus with the Titan M security chip and up to three years of updates from Google, you know your phone is staying secure.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "349.99",
+            "image": "product/google-pixel-4a-4g-black-front-hq_UoSuJyO.png",
+            "stock": 25,
+            "available": true,
+            "created": "2021-02-26T22:43:28.339Z",
+            "updated": "2021-02-26T22:43:28.339Z",
+            "count_sold": 0,
+            "slug": "GOOGLE-PIXEL-4A"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "e8f56aec-4cec-4fdc-97d2-88c6eac30b53",
+        "fields": {
+            "name": "SAMSUNG GALAXY A71",
+            "description": "Capture the world in all its glory. With a quad-camera system that features ultra-wide and macro lenses, you can get up close and personal or shoot a perfect panorama. View what you shoot on the 6.7-inch Infinity-O display, with bright and clear colours. With a 4,500mAh fast-charging battery you're set to shoot all day long.",
+            "category": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+            "price": "449.99",
+            "image": "product/samsung-galaxy-a71-black-front_ftyBclV.png",
+            "stock": 12,
+            "available": true,
+            "created": "2021-02-26T22:45:40.837Z",
+            "updated": "2021-03-22T11:09:52.263Z",
+            "count_sold": 6,
+            "slug": "SAMSUNG-GALAXY-A71"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "1dcf71ba-0d71-4367-a6a7-85573889f16f",
+        "fields": {
+            "name": "IPhone 11 Pro Max (A2161) Replacement Battery",
+            "description": "Replacement Battery 3969 mAh 3.79 V Compatible With Apple iPhone 11 Pro Max (A2161)\r\n\r\nAre you having a rough time with your Apple iPhone 11 Pro Max Battery?\r\nSo, if you can just replace the battery part, everything will fall into place. \r\nOur replacement Apple iPhone 11 Pro Max Battery will take care of the problems for you here.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "70.00",
+            "image": "product/battery_2_51_FGurE4w.jpg",
+            "stock": 3,
+            "available": true,
+            "created": "2021-04-11T21:41:29.827Z",
+            "updated": "2021-04-11T21:41:29.827Z",
+            "count_sold": 0,
+            "slug": "IPhone-11-Pro-Max-A2161-Replacement-Battery"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "1dd64c9e-e18b-4b75-8987-51ff775ca896",
+        "fields": {
+            "name": "IPHONE 12 Camera Lens Protector",
+            "description": "Mobile phone camera lens protection 3D flexible tempered film A18 for iPhone 12 / 12 mini / 12 Pro / 12 Pro Max, HD, metal frame, anti-fingerprint.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "29.99",
+            "image": "product/iphoneCamera_uV77h7l.jpg",
+            "stock": 10,
+            "available": true,
+            "created": "2021-04-11T16:50:50.020Z",
+            "updated": "2021-04-11T16:50:50.020Z",
+            "count_sold": 0,
+            "slug": "IPHONE-12-Camera-Lens-Protector"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "4ad8a937-edaf-4a6e-860d-037f1c578407",
+        "fields": {
+            "name": "IPhone 11 LCD Replacement",
+            "description": "LCD Replacement for IPhone 11",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "56.99",
+            "image": "product/iphoneLCD_V5W9gNb.jpg",
+            "stock": 12,
+            "available": true,
+            "created": "2021-04-11T21:51:08.790Z",
+            "updated": "2021-04-11T21:51:08.790Z",
+            "count_sold": 0,
+            "slug": "IPhone-11-LCD-Replacement"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "545f5608-653f-4968-b5f1-98ddf63705bb",
+        "fields": {
+            "name": "IPhone 6 Space Grey Black Body Back Cover",
+            "description": "Body Back Cover Case Spare Parts For iPhone 6 Space Grey Black\r\n\r\nA brand-new, unused, unopened, undamaged item in its original packaging.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "45.99",
+            "image": "product/iphone6GbodyBackCase_FhhFQ6V.jpg",
+            "stock": 7,
+            "available": true,
+            "created": "2021-04-11T21:49:12.719Z",
+            "updated": "2021-04-11T21:49:12.719Z",
+            "count_sold": 0,
+            "slug": "IPhone-6-Space-Grey-Black-Body-Back-Cover"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "5afb58e5-a17e-408d-a997-8aa56dd76759",
+        "fields": {
+            "name": "Samsung Galaxy S8 SIM Tray",
+            "description": "Replace the old, broken, cracked, damaged one.\r\nMake your device look more refreshing than ever.\r\nCompletely fit and work.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "20.00",
+            "image": "product/S8_sim_tray.jpg",
+            "stock": 15,
+            "available": true,
+            "created": "2021-04-11T16:53:44.195Z",
+            "updated": "2021-04-11T17:06:05.984Z",
+            "count_sold": 0,
+            "slug": "Samsung-Galaxy-S8-SIM-Tray"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "771f732f-9c71-464c-8a09-925b378e3e56",
+        "fields": {
+            "name": "S PEN Note 9 Yellow",
+            "description": "The smartest stylus on the market - the S pen - compatible with the Samsung Galaxy Note 9.\r\nThe improved S pen allows you to be as creative as possible with your Galaxy Note 9 enabling you to get an ideal experience possible from your tablet.\r\nMaking it impossible to scratch your screen during use, the round end of the stylus allows you to use it without the fear of causing any damage to your tablet.\r\nThis is an official Samsung product, so is made to the higher standards with the ideal quality materials.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "120.00",
+            "image": "product/note9pen_ByhDZ0X.png",
+            "stock": 14,
+            "available": true,
+            "created": "2021-03-19T10:03:25.511Z",
+            "updated": "2021-04-11T21:04:08.096Z",
+            "count_sold": 1,
+            "slug": "SPen-Samsung-Note9"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "7df6f9a7-5d30-4f60-b3bf-2cb4fb629f65",
+        "fields": {
+            "name": "Samsung A9 Camera Replacement",
+            "description": "",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "80.00",
+            "image": "product/camera_pHjCuiD.jpg",
+            "stock": 5,
+            "available": true,
+            "created": "2021-04-11T21:10:44.614Z",
+            "updated": "2021-04-11T21:10:44.614Z",
+            "count_sold": 0,
+            "slug": "Samsung-A9-Camera-Replacement"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "7ffc3f1e-f002-4839-99fb-d997d223e996",
+        "fields": {
+            "name": "Samsung Galaxy Note 9 Dual Rear-Facing Camera Replacement",
+            "description": "Samsung Galaxy Note 9 (N960U) Dual Rear-Facing Camera replacement part. When you utilize the dual 12 MP rear cameras (26mm, â/1.5-2.4 and 52mm, â/2.4) with optical image stabilization and zoom on your Samsung phone to capture priceless moments, you expect sharp images and high-resolution videos (2160p@60fps). If your dual rear camera module is not focusing properly or no longer responding, we've got your back.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "50.00",
+            "image": "product/samsungNote9Camera_eyCHIAn.jpg",
+            "stock": 5,
+            "available": true,
+            "created": "2021-04-11T21:13:17.794Z",
+            "updated": "2021-04-11T21:13:17.794Z",
+            "count_sold": 0,
+            "slug": "Samsung-Galaxy-Note-9-Dual-Rear-Facing-Camera-Repl"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "85adfee8-6708-418c-8c8d-b3458847d33f",
+        "fields": {
+            "name": "Samsung A51 Middle Frame Gold",
+            "description": "",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "20.00",
+            "image": "product/middle_frame_gold2.jpg",
+            "stock": 10,
+            "available": true,
+            "created": "2021-04-11T16:04:38.817Z",
+            "updated": "2021-04-11T21:02:27.599Z",
+            "count_sold": 0,
+            "slug": "Samsung-A51-Middle-Frame-Gold"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "8a4bcd59-bfa1-4c5e-9864-184b2e97adf1",
+        "fields": {
+            "name": "IPhone XS Rear Camera Replacement",
+            "description": "This iPhone XS Rear Camera Replacement will replace your damaged or cracked one. The rear camera is really important when taking pictures or capturing memories. But if it is scratched or broken, then the pictures will not take properly or they won't take at all. Scratches on the camera can cause a glare, and the pictures wonÆt look right. But our brand new 12 MP Dual rear camera replacement will solve your picture problems. You can get back to using awesome features like 2x optical zoom or HDR. Return your iPhone XS back to normal and continue capturing memories with this perfect repair part.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "45.00",
+            "image": "product/iphoneXSrearCam_PQ44V4U.png",
+            "stock": 8,
+            "available": true,
+            "created": "2021-04-11T21:22:40.048Z",
+            "updated": "2021-04-11T21:22:40.048Z",
+            "count_sold": 0,
+            "slug": "IPhone-XS-Rear-Camera-Replacement"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "9a171c11-8218-4556-98c6-f0cfe0284b68",
+        "fields": {
+            "name": "Samsung Galaxy M20 Battery Replacement",
+            "description": "The genuine battery within the best worth price with a future replacement warranty.100% latest merchandise and never used. Every product has been tested by our technical team before dispatch.",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "20.00",
+            "image": "product/samsungM20_l6b8wAI.jpg",
+            "stock": 5,
+            "available": true,
+            "created": "2021-04-11T21:19:40.638Z",
+            "updated": "2021-04-11T21:19:40.638Z",
+            "count_sold": 0,
+            "slug": "Samsung-Galaxy-M20-Battery-Replacement"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": "9b3a8b46-f34d-484e-85b4-94aacf4d4c6d",
+        "fields": {
+            "name": "Samsung Galaxy Note 9 S Pen Pink",
+            "description": "Official replacement S Pen\r\n4096 levels of pressure sensitivity\r\n\r\nThe improved S pen allows you to be as creative as possible with your Galaxy Note 9 enabling you to get an ideal experience possible from your tablet\r\nMaking it impossible to scratch your screen during use, the round end of the stylus allows you to use it without the fear of causing any damage to your tablet\r\nThis is an official Samsung product, so is made to the higher standards with the ideal quality materials",
+            "category": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+            "price": "129.99",
+            "image": "product/samsung-galaxy-note-9-s-pen-stylus_zZkJ0xS.jpg",
+            "stock": 10,
+            "available": true,
+            "created": "2021-04-11T21:00:44.152Z",
+            "updated": "2021-04-11T21:04:46.574Z",
+            "count_sold": 0,
+            "slug": "Samsung-Galaxy-Note-9-S-Pen-Pink"
+        }
+    }
+]

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Cancel Booking{% endblock title %}
+{% block content %}
+
+<div class="fluid-container d-flex m-1">
+<div class="card justify-content-center align-self-center mx-auto">
+  <div class="card-header text-white bg-info text-center">
+     <h5>Cancel your booking</h5>
+  </div>
+
+<div class="card-body">
+  <form action="" method="post">{% csrf_token %}
+    <p>Are you sure you want to cancel you booking repair for {{ booking.phone }} on {{ booking.booking_date }}?</p>
+    <p class="text-center"><button class="btn bg-info text-white btn-sm" type="submit">Confirm</button>
+      <a class="btn bg-info text-white btn-sm" href="{% url 'booking:all_bookings' %}">Back</a></p>
+  </form>
+  </div>
+</div>
+</div>
+
+{% endblock content %}

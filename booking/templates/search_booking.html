@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Search Bookings{% endblock title %}
+{% load static %}
+{% block content %}
+
+<div class="container ">
+	<div class="card-header bg-info text-white text-center"><h5>Serach and Filters</h5></div>
+
+	<div class="row">
+	<div class="col-sm-2">
+		<div class="container bg-light text-info p-1 mb-5"><br>
+	<form class="form-inline my-2 my-lg-0" action="{% url 'booking:booking_search_result' %}" method="get">
+        {% csrf_token %}
+
+		<button name="approve_booking" class="btn btn-link"
+				onclick="showFilterDiv('approved')" type="submit">Approved</button>
+		<button name="napprove_booking" class="btn btn-link"
+				onclick="showFilterDiv('unapproved')" type="submit">Not Approved</button>
+		<button name="arrived" class="btn btn-link"
+				onclick="showFilterDiv('arrived')" type="submit">Arrived</button>
+		<button name="not_arrived" class="btn btn-link"
+				onclick="showFilterDiv('not_arrived')" type="submit">Not Arrived</button>
+
+		<button name="repaired" class="btn btn-link"
+				onclick="showFilterDiv('repaired')" type="submit">Repaired</button>
+		<button name="not_repaired" class="btn btn-link"
+				onclick="showFilterDiv('not_repaired')" type="submit">Not repaired</button>
+		<button name="collected" class="btn btn-link"
+				onclick="showFilterDiv('collected')" type="submit">Collected</button>
+		<button name="not_collected" class="btn btn-link"
+				onclick="showFilterDiv('not_collected')" type="submit">Not collected</button>
+		<button name="post" class="btn btn-link"
+				onclick="showFilterDiv('post')" type="submit">Sent By Post</button>
+		<button name="dropoff" class="btn btn-link"
+				onclick="showFilterDiv('dropoff')" type="submit">Drop off</button>
+		<button name="booking_date" class="btn btn-link"
+				onclick="showFilterDiv('dates')" type="submit">Booked dates</button>
+      </form>
+		</div>
+	</div>
+		<div class="col-sm-10">
+	  <div class="container bg-light text-info p-5 text-center"><br>
+		  <div class="fluid-container d-flex m-5 justify-content-center align-self-center mx-auto mb-5">
+	 <form class="form-inline" action="{% url 'booking:booking_search_result' %}" method="get">
+        {% csrf_token %}
+        <input class="form-control mr-sm-2" type="search" placeholder="Search all" aria-label="Search" name="q">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+
+      </form>
+		  </div>
+{% if booking_query %}
+	<p class="text-center">You have searched for: {{booking_query}}</p>
+	{% for booking in bookings %}
+			<hr>
+			<span class="text-center"><a href="{% url 'booking:booking_detail' booking.id %}">{{booking.email}} | {{booking.phone}} | {{booking.fault}} | {{booking.booking_type}} |{{booking.booking_date}}</a></span>
+			{% empty %}
+			<p>No results found</p>
+
+			{% endfor %}
+			{%endif%}
+
+		  <div id="approved">
+	{% for booking in approved_query %}
+	<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Approved | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+</div>
+<div id="unapproved">
+			{% for booking in unapproved_query %}
+
+	<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Not Approved | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+	</div>
+
+	<div id="arrived">
+	{% for booking in arrived_query %}
+		<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Arrived | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+	</div>
+
+	<div id="not_arrived">
+	{% for booking in not_arrived_query %}
+	<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Not Arrived | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+	</div>
+	<div id="repaired">
+	{% for booking in repaired_query %}
+
+		<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Repaired | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+	</div>
+
+	<div id="not_repaired">
+	{% for booking in not_repaired_query %}
+
+		<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Not Repaired | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+	</div>
+
+	<div id="collected">
+	{% for booking in collected_query %}
+		<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Collected | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+	</div>
+
+	<div id="not_collected">
+	{% for booking in not_collected_query %}
+	<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">Not Collected | {{booking.author}} |  {{booking.phone}} |
+
+		{{booking.booking_type}} | {{booking.booking_date}}</a></span></br>
+			{% endfor %}
+	</div>
+
+	<div id="post">
+		{% for booking in post_query %}
+		<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">{{booking.booking_type}} | {{booking.author}} |  {{booking.phone}} |
+	
+			{{booking.booking_date}}</a></span></br>
+				{% endfor %}
+	</div>
+	<div id="dropoff">
+		{% for booking in dropoff_query %}
+		<hr><span><a href="{% url 'booking:booking_detail' booking.id %}">{{booking.booking_type}} | {{booking.author}} |  {{booking.phone}} |
+	
+ {{booking.booking_date}}</a></span></br>
+				{% endfor %}
+	</div>
+
+		<div id="dates">
+	<table class="table table-hover table-bordered table-sm">
+
+		<tbody>
+			{% for booking in booking_dates_query %}
+		  <tr>
+
+			<td>{{booking.booking_date}}</td>
+			<td>{{booking.max_count}}</td>
+	
+		  </tr>
+	
+		{% endfor %}
+	</tbody>
+</table>
+		</div>
+    </div>
+  </div>
+	  </div>
+    </div>
+
+ <!-- JavaScript-->
+    {% block javascript %}
+    <script type="text/javascript" src='{% static "js/base.js" %}'></script>
+    {% endblock javascript %}
+
+{% endblock %}

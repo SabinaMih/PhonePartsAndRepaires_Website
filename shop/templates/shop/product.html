@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+	{{ product.description|truncatewords:155 }}
+{% endblock %}
+{% block title %}
+	{{ product.name }} - Phones, Parts & Repairs
+{% endblock %}
+{% block content %}
+	<div class = "row my_prod_row_class">
+		<div class = "mx-auto">
+			<p><a href="{% url 'shop:allProdCat' %}">Home</a> | <a href="{{ product.category.get_url }}">{{product.category}}</a> - {{product.name}}</p>
+		</div>
+		<div class = "container">
+			<br>
+			<div class = "row">
+				<div class = "col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+					<div class="img-max d-block">
+						<img class="img-fluid" src="{{product.image.url}}" alt="{{product.name}}">
+					</div>
+				</div>
+				<div class = "col-12 col-sm-12 col-md-12 col-lg-6">
+					<div>
+						<h1 class = "my_prod_title">{{product.name}}</h1>
+						<p>€{{product.price}}</p>
+						<p class = "my_title">Product Description</p>
+						<p class = "text-justify my_prod_text">{{product.description}}</p>
+						{% if user.is_authenticated %}
+						{% if product.stock == 0%}
+							<p class = "text-justify my_prod_text"><b>Out of Stock</b></p>
+						{% else %}
+							<a class = "btn btn-info" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+							<a class = "btn btn-secondary" href="{% url 'wishlist:add_wishlist' product.id %}">Add to wishlist</a>
+						{% endif %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-footer m-5"><h2>Product Reviews</h2>
+		{% for review in product.review.all %}
+		  <div class="card m-2">
+		  <div class="card-header">
+		  <span class="font-weight-bold">{{ review.author }}</span>
+		  <span class="text-muted"> | {{ review.created_date }}</span></div>
+		  <div class="card-body">{{ review.text }}</div>
+		  <div class="card-body">
+			{% if review.photo %}
+				<div class="img-max d-block">
+				  <img class="img-fluid" src="{{review.photo.url}}" alt="{{ review.author }}">
+				</div>
+			  {% endif %}
+		  </div>
+		</div>
+		{% empty %}
+		  <p>No reviews</p>
+		{% endfor %}
+		{% if user.is_authenticated %}
+			<a class="btn bg-secondary text-white btn-sm ml-3" href="{% url 'shop:add_product_review' product.pk %}">Add review</a>
+		{% endif %}
+	</div>
+{% endblock %}

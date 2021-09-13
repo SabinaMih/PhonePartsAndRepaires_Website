@@ -1,0 +1,93 @@
+[
+    {
+        "model": "booking.phonemodel",
+        "pk": "12fb3080-77af-4f5d-bf21-d0645cfe4eb3",
+        "fields": {
+            "phone": "Samsung Galaxy S10"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "2c2b2f11-afc4-4c76-bccc-11506d53026e",
+        "fields": {
+            "phone": "Samsung Galaxy S7 Edge"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "74c183ba-eb55-4c4a-8121-98e8eb2d8753",
+        "fields": {
+            "phone": "Samsung Galaxy S20"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "764aeb7e-66e8-4b5f-92cb-8d9bcec2326f",
+        "fields": {
+            "phone": "iPhone SE"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "878437d7-a450-42d3-802f-d85adcb1b8d7",
+        "fields": {
+            "phone": "Samsung Galaxy S20 Ultra"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "9278e268-4094-4e1a-8de3-5982a9c3ed5e",
+        "fields": {
+            "phone": "iPhone SE 2020"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "959a3320-460e-41de-8bcc-927ec95272e9",
+        "fields": {
+            "phone": "iPhone 5s"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "afd5c0fa-8e1b-4042-b243-b6199c34112c",
+        "fields": {
+            "phone": "iPhone 6 Plus"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "b09b2e62-adeb-4cd0-96e7-5193eec707be",
+        "fields": {
+            "phone": "iPhone 8"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "c09b033e-3d5c-4163-9dad-c169813e06f4",
+        "fields": {
+            "phone": "Samsung S7"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "cfe923fe-b0c1-45cc-8c62-4730f6b49236",
+        "fields": {
+            "phone": "iPhone X"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "d833867b-9261-499a-b222-23d93d88e3c6",
+        "fields": {
+            "phone": "iPhone SE 2020"
+        }
+    },
+    {
+        "model": "booking.phonemodel",
+        "pk": "eb1fbd73-51f3-4b15-9493-b58f77766748",
+        "fields": {
+            "phone": "Samsung Galaxy S8"
+        }
+    }
+]

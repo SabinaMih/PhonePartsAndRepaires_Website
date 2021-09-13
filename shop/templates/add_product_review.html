@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="card m-5">
+    <div class="card-header">
+        <h2>New Review</h2>
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form|crispy }}
+    </div>
+</div>
+<button class="btn bg-dark text-white btn-sm ml-5" type="submit">Send</button>
+<a class="btn bg-dark text-white btn-sm" href="{% url 'shop:allProdCat'%}">Back</a>
+</form>
+</div>
+
+</div>
+{% endblock content %}

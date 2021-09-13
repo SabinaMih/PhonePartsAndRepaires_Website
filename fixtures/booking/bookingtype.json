@@ -1,0 +1,16 @@
+[
+    {
+        "model": "booking.bookingtype",
+        "pk": "6bac7801-3845-47b6-8dbc-78ddfb8b5dd5",
+        "fields": {
+            "booking_type": "Drop off"
+        }
+    },
+    {
+        "model": "booking.bookingtype",
+        "pk": "ac7a1673-796b-40aa-aabe-67eca43a421b",
+        "fields": {
+            "booking_type": "Post"
+        }
+    }
+]

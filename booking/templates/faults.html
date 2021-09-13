@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Faults{% endblock title %}
+{% block content %}
+
+
+  <table class="table table-hover table-responsive table-bordered table-sm ">
+    <thead class="bg-info text-center text-white">
+      <tr>
+        <th>Fault name</th>
+        <th>Cost</th>
+           <th>Delete</th>
+      </tr>
+
+    </thead>
+    <tbody>
+       {% for fault in object_list %}
+      <tr>
+        <td>{{ fault.fault }}</td>
+            <td>{{ fault.cost }}</td>
+        <td><p><a class="custom_icon" href="{% url 'booking:fault_remove' fault.id %}"><i class="fas fa-trash-alt custom_icon"></i></a></p></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+    <p class="text-center "><a class="btn bg-info text-white btn-sm mb-5" href="{% url 'booking:fault_new' %}">Add new fault</a>
+         <a class="btn bg-info text-white btn-sm mb-5" href="{% url 'booking:manage_bookings' %}">Back</a></p>
+
+
+{% endblock content %}

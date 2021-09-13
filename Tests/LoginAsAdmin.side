@@ -1,0 +1,136 @@
+{
+  "id": "edcbf527-f05b-4f66-96c8-eef6c7f61078",
+  "version": "2.0",
+  "name": "Project_2ndYr",
+  "url": "http://127.0.0.1:8000",
+  "tests": [{
+    "id": "aea4b689-3a76-4daa-a37f-0644ba9b8edd",
+    "name": "Login as admin",
+    "commands": [{
+      "id": "21926bc6-867f-45a8-9560-4c0d60211361",
+      "comment": "",
+      "command": "open",
+      "target": "/login/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "625accda-3ed4-468a-815c-8541c7076675",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "572x310",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c71c797-58fd-408c-a772-08c236b47620",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_username']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Kira"
+    }, {
+      "id": "afebb59d-79b3-4fd7-a1d5-f3ac68700d2d",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "spring2021"
+    }, {
+      "id": "bd8212e6-8b62-4499-a008-4bb159d2e38c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row",
+      "targets": [
+        ["css=.row", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd0b1db-4693-4ea4-a421-bdb26e3b22d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "827f92c9-9928-43aa-b436-ac419f78e04c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.my_custom_div",
+      "targets": [
+        ["css=.my_custom_div", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9144fb7b-18a7-4b0b-b20d-17fe5c24e96b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e35df007-4218-40a4-9182-ca93616894c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > #navbarDropdown",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > #navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Welcome back, Kira.')]", "xpath:link"],
+        ["xpath=(//a[@id='navbarDropdown'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34a2d37c-803f-46b4-9905-373db5867211",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show > .dropdown-item:nth-child(1)",
+      "targets": [
+        ["css=.show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Administrator Panel')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin')]", "xpath:href"],
+        ["xpath=//div/li/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "880b191c-224d-41aa-8d9b-1b7c1bca14f4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aea4b689-3a76-4daa-a37f-0644ba9b8edd"]
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}

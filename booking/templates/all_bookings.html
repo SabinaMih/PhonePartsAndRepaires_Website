@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %} My Bookings {% endblock title %}
+{% block content %}
+{% if user.is_superuser %}
+{% if object_list|length > 0 %}
+<h5 class="text-info">All Bookings</h5>
+  <table class="table table-hover table-bordered table-sm text-center">
+ <thead class="bg-info text-white">
+      <tr><th>Name</th><th>Phone Model</th><th>Fault</th><th>Booking Date</th><th>Booking Type</th><th>More</th></tr>
+    </thead>
+    <tbody>
+       {% for booking in object_list %}
+       {% if booking.collected == False and booking.refuse == False %}
+      <tr>
+        <td>{{ booking.author }}</td>
+          <td>{{ booking.phone }}</td>
+          <td>{{ booking.fault }}</td>
+          <td>{{ booking.booking_date }}</td>
+          <td>{{ booking.booking_type }}</td>
+          <td><a href="{% url 'booking:booking_detail' booking.id %}">See More</a></td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+      {% else %}
+      <h5 class="text-info text-center">No bookings to display</h5>
+{% endif %}
+{% endif %}
+
+
+{% if user.is_authenticated and not user.is_superuser %}
+{% if messages %}
+<div class="card m-3 bg-info text-white text-center p-3">
+    {% for message in messages %}
+        <h5 {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h5>
+    {% endfor %}
+</div>
+{% endif %}
+
+<h5 class="text-info">My Bookings</h5>
+  <table class="table table-hover table-bordered table-sm text-center">
+ <thead class="bg-info text-white">
+      <tr><th>Name</th><th>Phone Model</th><th>Fault</th><th>Booking Date</th><th>Booking Type</th><th>More</th></tr>
+    </thead>
+    <tbody>
+       {% for booking in object_list %}
+      {% if booking.author == user %}
+       {% if booking.collected == False and booking.refuse == False%}
+      <tr>
+        <td>{{ booking.author }}</td>
+          <td>{{ booking.phone }}</td>
+          <td>{{ booking.fault }}</td>
+          <td>{{ booking.booking_date }}</td>
+          <td>{{ booking.booking_type }}</td>
+          <td><a href="{% url 'booking:booking_detail' booking.id %}">See More</a></td>
+      </tr>
+      {% endif %}
+      {% endif %}
+ 
+    {% endfor %}
+    </tbody>
+  </table>
+
+{% endif %}
+
+
+{% endblock content %}

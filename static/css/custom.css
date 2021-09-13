@@ -1,0 +1,151 @@
+/****Navbar****/
+.nav-item {
+	letter-spacing: .2em;
+	font-size: 14px;
+	text-transform: uppercase;
+	display: block;
+}
+.dropdown-item {
+	font-size: 14px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+/****Footer****/
+.my_footer {
+	background-color: #f8f9fa;
+	height: 60px;
+}
+.my_footer p {
+	padding-top: 20px;
+	font-size: 14px;
+}
+/****Category page****/
+.my_row_class {
+	padding-top: 15px;
+}
+.my_row_class .mx-auto p {
+	color: #000;
+	font-size: 15px;
+}
+.my_row_class .mx-auto p a {
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+
+}
+
+/****Category page****/
+.my_image {
+	width: 100%;
+	height: auto;
+}
+.my_title {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+.my_image_padding {
+	padding-top: 5px;
+}
+.my_bottom_margin {
+	margin-bottom: 10px;
+}
+
+.card-body h4 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+/****Product Page****/
+.my_prod_row_class {
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.my_prod_row_class .mx-auto p {
+	color: #000;
+	font-size: 15px;
+}
+.my_prod_row_class .mx-auto p a{
+	color: rgb(42, 167, 179);
+	font-size: 15px;
+	text-decoration: none;
+}
+.my_prod_row_class .mx-auto p a:hover {
+	color: rgb(39, 44, 43);
+	font-size: 16px;
+	text-decoration: underline;
+}
+.my_prod_title {
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.my_prod_text {
+	padding-right: 20px;
+}
+/**** Logo****/
+.logo {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+/****Cart Page****/
+.my_custom_table {
+	min-width: 400px;
+	font-size: 14px;
+}
+.my_custom_thead {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	background-color: #f8f9fa!important;
+}
+.custom_image {
+	width: 100px;
+	height: 100px;
+}
+.custom_a {
+	text-decoration: none;
+}
+.custom_icon {
+	text-decoration: none;
+	color: #868e96 !important;
+}
+.my_custom_button {
+	margin-top: 5px;
+}
+
+
+.bookingImg {
+    padding: 40px;
+    /* img ref:  https://tustrucos.com/cell-phone-repair-what-to-know-before-you-go/ */
+    background: url("../images/repair2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/***Stripe Button***/
+.stripe-button-el {
+	width: 100% !important;
+	display: block !important;
+	background-color: #808080 !important;
+	border: 0px !important;
+	background-image: none !important;
+}
+.stripe-button-el span {
+	display: block;
+	position: relative;
+	padding: 0px 12px;
+	height: 36px !important;
+	line-height: 36px !important;
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 16px !important;
+	color: rgb(255, 255, 255) !important;
+	background-image: none !important;
+	background: none !important;
+}

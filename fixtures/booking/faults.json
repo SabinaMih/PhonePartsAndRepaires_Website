@@ -1,0 +1,66 @@
+[
+    {
+        "model": "booking.fault",
+        "pk": "040657e0-d6b6-4204-9833-66ac624ef7fd",
+        "fields": {
+            "fault": "Rear camera",
+            "cost": "45.00"
+        }
+    },
+    {
+        "model": "booking.fault",
+        "pk": "07ba0b10-0851-4823-ad11-7f3647d72dce",
+        "fields": {
+            "fault": "Audio",
+            "cost": "35.00"
+        }
+    },
+    {
+        "model": "booking.fault",
+        "pk": "0fec19c5-2f8c-4b2b-a221-ceac4455c894",
+        "fields": {
+            "fault": "Charging Port",
+            "cost": "35.00"
+        }
+    },
+    {
+        "model": "booking.fault",
+        "pk": "12d5149e-4cd4-4ac7-98cf-965a570b2fa0",
+        "fields": {
+            "fault": "Battery Replacement",
+            "cost": "50.00"
+        }
+    },
+    {
+        "model": "booking.fault",
+        "pk": "3d0fe7a6-2933-46b5-9dd0-d22017922d60",
+        "fields": {
+            "fault": "Other",
+            "cost": "0.00"
+        }
+    },
+    {
+        "model": "booking.fault",
+        "pk": "51c4dac2-2148-4fae-b04c-1c4f51cc11ad",
+        "fields": {
+            "fault": "Front camera",
+            "cost": "35.00"
+        }
+    },
+    {
+        "model": "booking.fault",
+        "pk": "cd60bfd3-4ce3-4e65-b98e-0108f61cb2d4",
+        "fields": {
+            "fault": "Software Fault/Service",
+            "cost": "30.00"
+        }
+    },
+    {
+        "model": "booking.fault",
+        "pk": "f81e4536-aced-4bf2-a6ef-7e6e61419dac",
+        "fields": {
+            "fault": "Screen Replacement",
+            "cost": "100.00"
+        }
+    }
+]

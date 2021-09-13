@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Confirmation{% endblock title %}
+{% block content %}
+
+<div class="bookingImg">
+<div class="fluid-container mt-5 mb-5">
+
+
+<div class="card bg-info text-white text-center p-3">
+        
+<p>We received your booking request</p>
+        {% if cost %}
+       <p>The estimated cost for repair is: €{{ cost }}</p>
+        {% endif %}
+        <p><a class="btn bg-info text-white btn-sm" href="{% url 'booking:all_bookings' %}">My bookings</a>
+        <a class="btn bg-info text-white btn-sm" href="{% url 'shop:allProdCat' %}">Home</a></p>
+        </div>
+      </div>
+</div>
+</div>
+{% endblock content %}

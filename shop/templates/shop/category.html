@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+{% block metadescription %}
+	{% if category %}
+		{{ category.description|truncatewords:155 }}
+	{% else %}
+		Welcome to our online shop where you can find anything you need!
+	{% endif %}
+{% endblock %}
+{% block title %}
+	{% if category %}
+		{{ category.name }} - Perfect Online Store for all your needs
+	{% else %}
+		See Our Products & Services
+	{% endif %}
+{% endblock %}
+{% block content %}
+	<!--Breadcrumb navigation-->
+	{% if category %}
+		<div class="row my_row_class">
+			<div class="mx-auto font-weight-bold">
+				<p><a href="{% url 'shop:allProdCat' %}">Product Collection</a> | {{category.name}}</p>
+			</div>
+        </div>
+    {% endif %}
+	<div class = "mx-auto">
+	{% if category %}
+		<img class = "my_image" src="{{category.image.url}}" alt="{{category.name}}">
+	</div>
+	<br>
+	<div>
+		<h1 class = "text-center my_title">{{category.name}}</h1>
+		<hr>
+		<br>
+		<p class = "text-justify">{{category.description}}</p>
+    </div>
+    {% else %}
+		
+	</div>
+	<br>
+    {% endif %}
+    <div class="container">
+		<div class="row mx-auto">
+			{% for product in products.object_list %}
+				<div class="col-9 col-lg-4 col-sm-12 col-md-4 mb-3">
+					<div class="card-product text-center">
+						<a href="{{product.get_absolute_url}}"><img src="{{product.image_thumbnail.url}}" alt="{{product.name}}"></a>
+						<div class="card-body">
+							<hr>
+							<a class="font-weight-bold text-dark" href="{{product.get_absolute_url}}">{{product.name}}</a>
+							<p>€{{product.price}}</p>						
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="mx-auto">
+			{% if products.paginator.num_pages > 1 %}
+				<hr>
+				<div class="text-center">
+					{% for pg in products.paginator.page_range %}
+						<a href="?page={{pg}}" class="btn btn-secondary btn-sm {% if products.number == pg %}active{% endif %}">{{pg}}</a>
+					{% endfor %}
+				</div>
+			{% endif %}
+			<hr>
+		</div>
+		<br>
+	</div>
+{% endblock %}

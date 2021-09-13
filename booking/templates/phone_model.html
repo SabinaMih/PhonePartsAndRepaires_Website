@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Phone Models{% endblock title %}
+{% block content %}
+
+
+
+
+
+
+  <table class="mx-auto table table-hover table-bordered table-responsive table-sm">
+    <thead class="bg-info text-white text-center">
+      <tr>
+        <th>Phone Model</th>
+        <th>Delete</th>
+      </tr>
+
+    </thead>
+    <tbody>
+       {% for phone in object_list %}
+      <tr class="text-center">
+        <td>{{ phone.phone }}</td>
+        <td><p><a class="custom_icon" href="{% url 'booking:phone_remove' phone.id %}"><i class="fas fa-trash-alt custom_icon"></i></a></p></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+   <p class="text-center"><a class="btn bg-info text-white btn-sm mb-5" href="{% url 'booking:phone_new' %}">Add new phone</a>
+         <a class="btn bg-info text-white btn-sm mb-5" href="{% url 'booking:manage_bookings' %}">Back</a></p>
+
+
+
+{% endblock content %}

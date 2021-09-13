@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Book a repair{% endblock title %}
+{% block content %}
+
+<div class="bookingImg">
+<div class="fluid-container mt-5 mb-5">
+    <div class="card justify-content-center align-self-center mx-auto">
+        <div class="card-header text-white bg-info text-center">
+<h3>BOOK A REPAIR</h3>
+
+        </div>
+
+    <div class="card-body bg-light">
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+
+        <button class="btn bg-info text-white btn-sm" type="submit" >Submit</button>
+        <a class="btn bg-info text-white btn-sm" href="{% url 'shop:allProdCat' %}">Cancel</a>
+
+    </form>
+    </div>
+    </div>
+</div>
+</div>
+
+{% endblock content %}

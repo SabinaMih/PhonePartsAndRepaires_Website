@@ -1,0 +1,418 @@
+{
+  "id": "105e05dc-f110-4511-b01c-2799b479561d",
+  "version": "2.0",
+  "name": "AddProduct",
+  "url": "http://127.0.0.1:8000/admin/",
+  "tests": [{
+    "id": "fed675a4-8be7-41e8-a78d-764bd3e80cc8",
+    "name": "AddProduct_Name",
+    "commands": [{
+      "id": "84c4fcdb-aa02-4800-b1c3-de98df233e6d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/admin/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c4a00ec-3269-42a3-92a7-7d8f97617e03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faeaf93c-1418-4432-a700-2afa730825fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.model-product .addlink",
+      "targets": [
+        ["css=.model-product .addlink", "css:finder"],
+        ["xpath=(//a[contains(text(),'Add')])[8]", "xpath:link"],
+        ["xpath=//div[@id='content-main']/div[4]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/shop/product/add/')]", "xpath:href"],
+        ["xpath=//div[4]/table/tbody/tr[2]/td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e503606a-042c-48be-aea5-3200c62e9b04",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79b36b48-8e74-4574-90af-0b66e7136a79",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "NOKIA 1.3"
+    }]
+  }, {
+    "id": "2aabd217-58db-4b24-9b07-ee31a857dd88",
+    "name": "AddProduct_description",
+    "commands": [{
+      "id": "422af2a6-bd61-4d43-9056-2e68fecf5856",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/admin/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2586cb3-7721-4608-b3c2-2a8fe44e891d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1928cd7d-ab2b-4867-97a6-ae1871e9e0ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.model-product .addlink",
+      "targets": [
+        ["css=.model-product .addlink", "css:finder"],
+        ["xpath=(//a[contains(text(),'Add')])[8]", "xpath:link"],
+        ["xpath=//div[@id='content-main']/div[4]/table/tbody/tr[2]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/shop/product/add/')]", "xpath:href"],
+        ["xpath=//div[4]/table/tbody/tr[2]/td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8d5b640-6a66-424c-9524-63a2e18a59fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_description",
+      "targets": [
+        ["id=id_description", "id"],
+        ["name=description", "name"],
+        ["css=#id_description", "css:finder"],
+        ["xpath=//textarea[@id='id_description']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "433042b6-94a5-42dd-ab3a-0d455c7cadee",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d09762-31fd-4144-8bfa-6ba295f31898",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Nokia 1.3"
+    }, {
+      "id": "dbe5ac3a-d1e1-4dfc-9a5c-6d96fa1936b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_description",
+      "targets": [
+        ["id=id_description", "id"],
+        ["name=description", "name"],
+        ["css=#id_description", "css:finder"],
+        ["xpath=//textarea[@id='id_description']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86d9356f-71c3-4a14-a41c-933bc02d50e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_description",
+      "targets": [
+        ["id=id_description", "id"],
+        ["name=description", "name"],
+        ["css=#id_description", "css:finder"],
+        ["xpath=//textarea[@id='id_description']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32d594e1-5301-4355-b1e5-c2920fca7302",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_description",
+      "targets": [
+        ["id=id_description", "id"],
+        ["name=description", "name"],
+        ["css=#id_description", "css:finder"],
+        ["xpath=//textarea[@id='id_description']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Ready, set, GO with the Nokia 1.3. Featuring a generous and bright 5.7-inch HD screen plus AI camera enhancement that lets you take snaps even in low light."
+    }, {
+      "id": "a8fa6d5f-7969-41d7-a82e-6c97dbb5d7e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_category",
+      "targets": [
+        ["id=id_category", "id"],
+        ["name=category", "name"],
+        ["css=#id_category", "css:finder"],
+        ["xpath=//select[@id='id_category']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d6bd294-6d39-4524-ba82-7ee633709cd8",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_category",
+      "targets": [],
+      "value": "label=Parts"
+    }, {
+      "id": "a6bb33ae-8dd6-4e28-97c8-6c8ae102fe32",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_category",
+      "targets": [
+        ["id=id_category", "id"],
+        ["name=category", "name"],
+        ["css=#id_category", "css:finder"],
+        ["xpath=//select[@id='id_category']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4985141-9d06-4040-b7c2-f59ffac615da",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_price",
+      "targets": [
+        ["id=id_price", "id"],
+        ["name=price", "name"],
+        ["css=#id_price", "css:finder"],
+        ["xpath=//input[@id='id_price']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c3ba7ba-2311-4099-8e3f-912cc787da51",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_price",
+      "targets": [
+        ["id=id_price", "id"],
+        ["name=price", "name"],
+        ["css=#id_price", "css:finder"],
+        ["xpath=//input[@id='id_price']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "99.99"
+    }, {
+      "id": "48303c05-9c96-47a2-ab56-cc94ab69041b",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_image",
+      "targets": [
+        ["id=id_image", "id"],
+        ["name=image", "name"],
+        ["css=#id_image", "css:finder"],
+        ["xpath=//input[@id='id_image']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95503c88-bbea-4d27-b04e-8acaaa45f24f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field-price .required",
+      "targets": [
+        ["css=.field-price .required", "css:finder"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[4]/div/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Price:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f549a787-23db-4f06-897e-693ec9e69c3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef4e1d6f-a06e-42b8-af02-710f17c34f3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_stock",
+      "targets": [
+        ["id=id_stock", "id"],
+        ["name=stock", "name"],
+        ["css=#id_stock", "css:finder"],
+        ["xpath=//input[@id='id_stock']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "15"
+    }, {
+      "id": "f4b9fb44-360a-4e35-b577-cc30f58e52e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_slug",
+      "targets": [
+        ["id=id_slug", "id"],
+        ["name=slug", "name"],
+        ["css=#id_slug", "css:finder"],
+        ["xpath=//input[@id='id_slug']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[9]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "134dc7e8-a278-4aa5-a963-8d9d44127731",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_count_sold",
+      "targets": [
+        ["id=id_count_sold", "id"],
+        ["name=count_sold", "name"],
+        ["css=#id_count_sold", "css:finder"],
+        ["xpath=//input[@id='id_count_sold']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f2d5b3-9ffb-4c00-8771-cc2fcc4ddd0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_slug",
+      "targets": [
+        ["id=id_slug", "id"],
+        ["name=slug", "name"],
+        ["css=#id_slug", "css:finder"],
+        ["xpath=//input[@id='id_slug']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[9]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6729f76-c214-4d77-8e58-7e82ddd344ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_slug",
+      "targets": [
+        ["id=id_slug", "id"],
+        ["name=slug", "name"],
+        ["css=#id_slug", "css:finder"],
+        ["xpath=//input[@id='id_slug']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[9]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/input", "xpath:position"]
+      ],
+      "value": "Nokia-1.3"
+    }, {
+      "id": "1635a619-9c3d-44a4-be3f-4221b9a334c9",
+      "comment": "",
+      "command": "click",
+      "target": "name=_save",
+      "targets": [
+        ["name=_save", "name"],
+        ["css=.default", "css:finder"],
+        ["xpath=//input[@name='_save']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c23eda6-1108-4c9f-879d-17aaba65dcf4",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_slug",
+      "targets": [
+        ["id=id_slug", "id"],
+        ["name=slug", "name"],
+        ["css=#id_slug", "css:finder"],
+        ["xpath=//input[@id='id_slug']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[9]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43a2885e-4b8a-4e36-ad38-cade14ab8305",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_slug",
+      "targets": [
+        ["id=id_slug", "id"],
+        ["name=slug", "name"],
+        ["css=#id_slug", "css:finder"],
+        ["xpath=//input[@id='id_slug']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/fieldset/div[9]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/input", "xpath:position"]
+      ],
+      "value": "Nokia-1_3"
+    }, {
+      "id": "435bb30d-68fa-4d69-a1fe-472fcfde7be9",
+      "comment": "",
+      "command": "click",
+      "target": "name=_save",
+      "targets": [
+        ["name=_save", "name"],
+        ["css=.default", "css:finder"],
+        ["xpath=//input[@name='_save']", "xpath:attributes"],
+        ["xpath=//form[@id='product_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "31af0aca-1cd7-4f78-a0ef-207b0980c2e7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:8000/admin/"],
+  "plugins": []
+}

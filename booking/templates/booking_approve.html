@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="fluid-container d-flex m-1">
+<div class="card justify-content-center align-self-center mx-auto">
+
+        <div class="card-header bg-info text-white text-center">
+<h5>Approve Bookings</h5>
+
+        </div>
+
+    <div class="card-body">
+        <p>  Name: {{booking.author}} Phone {{booking.phone}}</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+      
+
+           <p class="text-center"> <button class="btn bg-info text-white btn-sm" type="submit" >Approve</button>
+    
+               <a class="btn bg-info text-white btn-sm" href="{% url 'booking:manage_bookings' %}">Cancel</a></p>
+
+    </form>
+
+
+    </div>
+
+
+
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,20 @@
+[
+    {
+        "model": "shop.category",
+        "pk": "d65cbe3e-c76a-4d66-8a04-0e3ea5992a4c",
+        "fields": {
+            "name": "Parts",
+            "description": "Amazing Value",
+            "image": "category/mobilePartsLogo_4l7vxPd_H0HsSpw.png"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": "f59c2835-286e-409d-a2f3-34aa37cf6896",
+        "fields": {
+            "name": "Phones",
+            "description": "Apple iPhone, Samsung Galaxy",
+            "image": "category/samsungGalaxyLogo_RFj4y1a.jpg"
+        }
+    }
+]

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Successfully sent Email!
+{% endblock %}
+{% block content %}
+<h1>Thank you for your email!</h1>
+<p>To navigate back to the website, click <a href="{% url 'shop:allProdCat' %}">here!</a>
+{% endblock %}

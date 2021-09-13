@@ -1,0 +1,157 @@
+{
+  "id": "ac018e5d-af8d-445c-9f95-e22e55fa8120",
+  "version": "2.0",
+  "name": "Check_procuct_category",
+  "url": "http://127.0.0.1:8000/",
+  "tests": [{
+    "id": "64093606-1fb6-4430-b15c-9aa5c98118ba",
+    "name": "productPriceDisplay",
+    "commands": [{
+      "id": "58d4b833-9b0d-4f86-bca5-88ad6ecf0e61",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04bb1886-12f1-4148-9428-6989800dc34a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.my_bottom_margin:nth-child(1) .card-img-top",
+      "targets": [
+        ["css=.my_bottom_margin:nth-child(1) .card-img-top", "css:finder"],
+        ["xpath=//img[@alt='SAMSUNG GALAXY A71']", "xpath:img"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ee365b6-34af-406c-b346-8673663dd83e",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'€449.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ee0a8b8-1c07-48db-8768-1f10b97abf86",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'€449.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5007cc7d-ed51-4236-a6ef-a42129cfb809",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'€449.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86feb9a4-0741-4a3f-9ce5-d8bde34ca139",
+      "comment": "",
+      "command": "click",
+      "target": "css=.my_title",
+      "targets": [
+        ["css=.my_title", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed5a0ed4-f6a4-46a3-8f53-ae6391c791ef",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.my_title",
+      "targets": [
+        ["css=.my_title", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3aee3df-9acb-4084-be8f-cf421feb9214",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-justify",
+      "targets": [
+        ["css=.text-justify", "css:finder"],
+        ["xpath=//p[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ae6392c-98ef-49bc-a81c-3fde076523f4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.text-justify",
+      "targets": [
+        ["css=.text-justify", "css:finder"],
+        ["xpath=//p[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28977edd-63b8-4b84-80e5-7dc14e5c0fb6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.text-justify",
+      "targets": [
+        ["css=.text-justify", "css:finder"],
+        ["xpath=//p[3]", "xpath:position"]
+      ],
+      "value": "Capture the world in all its glory. With a quad-camera system that features ultra-wide and macro lenses, you can get up close and personal or shoot a perfect panorama. View what you shoot on the 6.7-inch Infinity-O display, with bright and clear colours. With a 4,500mAh fast-charging battery you're set to shoot all day long."
+    }, {
+      "id": "eacc4f9c-80ad-4bd1-b2d4-f164eab8f034",
+      "comment": "",
+      "command": "click",
+      "target": "css=.my_prod_title",
+      "targets": [
+        ["css=.my_prod_title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'SAMSUNG GALAXY A71')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa0f5a2-386b-4ea0-be32-1931feaec898",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "SAMSUNG GALAXY A71 - Perfect Phone, Parts & Repair Online Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dcf7ea7-e5ec-46f8-832d-1ca7350075f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(2)",
+      "targets": [
+        ["css=.col-12:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23be4bc4-087a-4c81-9c5e-981b94d9205d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ef6baca6-7151-4028-8891-7b7e048779d5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}

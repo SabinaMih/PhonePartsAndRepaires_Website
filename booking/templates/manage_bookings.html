@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% block title %}Manage Bookings{% endblock title %}
+{% block content %}
+
+<nav class="navbar navbar-expand-sm bg-info  justify-content-center">
+  <ul class="navbar-nav px-5">
+      <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'booking:booking_search_result' %}">Search</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'booking:all_bookings' %}"> All Bookings </a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'booking:phone_model' %}">Phones</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'booking:faults' %}">Faults</a>
+    </li>
+       <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'booking:booking_type' %}">Booking Types</a>
+    </li>
+    
+  </ul>
+</nav>
+<br>
+{% if messages %}
+<div class="card m-3 p-2 text-info text-center">
+    {% for message in messages %}
+        <h5 {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h5>
+    {% endfor %}
+</div>
+{% endif %}
+
+
+<div class="row">
+    <div class="col-sm-4">
+    <div class="fluid-container d-flex m-1">
+<div class="card justify-content-center align-self-center mx-auto">
+        <div class="card-header bg-info text-white text-center" ><h3>New Bookings</h3></div>
+<div class="card-body bg-light">
+        {% for booking in object_list %}
+        {% if booking.approve_booking == False and booking.refuse == False %}
+            <table class="table table-hover table-bordered table-responsive table-sm">
+                <tbody>
+                <tr> <td class="font-weight-bold">Name</td><td><a href="{% url 'booking:booking_detail' booking.id %}">{{ booking.author }}</a></td></tr>
+                <tr><td class="font-weight-bold">Phone Model: </td><td>{{ booking.phone }}</td></tr>
+                <tr><td class="font-weight-bold">Fault: </td><td>{{ booking.fault }}</td></tr>
+                <tr><td class="font-weight-bold">Booking type:</td><td> {{ booking.booking_type }}</td></tr>
+                <tr><td class="font-weight-bold">Booking date: </td><td>{{ booking.booking_date}}</td></tr>
+                <tr><td class="bg-info text-white text-center" ><a  class="text-white"  href="{% url 'booking:booking_approve' booking.id %}">Approve</a></td>
+                  <td class="bg-info text-white text-center" ><a  class="text-white"  href="{% url 'booking:refuse_booking' booking.id %}">Refuse</a></td></tr>
+
+                </tbody>
+            </table>
+    <hr class="bg-info">
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+
+        </div>
+    </div>
+</div>
+<div class="col-sm-4">
+<div class="fluid-container d-flex m-1">
+<div class="card justify-content-center align-self-center mx-auto">
+        <div class="card-header bg-info text-white text-center" ><h3>In progress</h3></div>
+        <div class="card-body bg-light">
+        {% for booking in object_list %}
+        {% if booking.approve_booking == True and booking.repaired == False and booking.refuse == False %}
+            <table class="table table-hover table-bordered table-responsive table-sm">
+                <tbody>
+                <tr><td class="font-weight-bold">Name</td><td><a href="{% url 'booking:booking_detail' booking.id %}">{{ booking.author }}</a></td></tr>
+                <tr><td class="font-weight-bold">Phone Model: </td><td>{{ booking.phone }}</td></tr>
+                <tr><td class="font-weight-bold">Fault: </td><td>{{ booking.fault }}</td></tr>
+                <tr><td class="font-weight-bold">Booking type:</td><td> {{ booking.booking_type }}</td></tr>
+                <tr><td class="font-weight-bold">Booking date: </td><td>{{ booking.booking_date}}</td></tr>
+                <tr>
+                    {% if booking.arrived == False %}
+                    <td class="bg-info text-white text-center" ><a  class="text-white" href="{% url 'booking:booking_approve' booking.id %}">Waiting for device</a></td>
+                     {% else %}
+                       <td class="bg-light text-center text-info ">Device arrived</td>
+                    {% endif %}
+                     {% if booking.arrived == True %}
+                     {% if booking.repaired == False%}
+                    <td class="bg-info text-white text-center" ><a  class="text-white" href="{% url 'booking:booking_approve' booking.id %}">Waiting for repair</a></td>
+                    {% else %}
+                            <td class="bg-light text-center text-info">Repaired</td>
+                          {% endif %}
+                         {% endif %}
+                </tr>
+
+                </tbody>
+            </table>
+            <hr class="bg-info">
+  {% endif %}
+
+    {% endfor %}
+              </div>
+</div>
+</div>
+</div>
+    <div class="col-sm-4">
+    <div class="fluid-container d-flex m-1">
+<div class="card justify-content-center align-self-center mx-auto">
+        <div class="card-header bg-info text-white text-center" ><h3>Completed</h3></div>
+<div class="card-body bg-light">
+        {% for booking in object_list %}
+           {% if booking.repaired == True and booking.collected == False %}
+            <table class="table table-hover table-bordered table-responsive table-sm">
+                <tbody>
+                <tr> <td class="font-weight-bold">Name</td><td><a href="{% url 'booking:booking_detail' booking.id %}">{{ booking.author }}</a></td></tr>
+                <tr><td class="font-weight-bold">Phone Model: </td><td>{{ booking.phone }}</td></tr>
+                <tr><td class="font-weight-bold">Fault: </td><td>{{ booking.fault }}</td></tr>
+                <tr><td class="font-weight-bold">Booking type:</td><td> {{ booking.booking_type }}</td></tr>
+                <tr><td class="font-weight-bold">Booking date: </td><td>{{ booking.booking_date}}</td></tr>
+                <tr>
+                  {% if booking.repaired == True %}
+                  <td class="bg-info text-white text-center"><a class="text-white" href="{% url 'booking:email_collection' booking.id %}">Send email to collect</a></td>
+                  {%endif%}
+                  <td class="bg-info text-white text-center" ><a class="text-white" href="{% url 'booking:booking_approve' booking.id %}">Mark as collected</a></td></tr>
+                </tbody>
+            </table>
+     <hr class="bg-info">
+    {% endif %}
+            {% endfor %}
+
+        </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+{% endblock content %}

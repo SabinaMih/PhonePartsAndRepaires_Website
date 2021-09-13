@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %} My Bookings {% endblock title %}
+{% block content %}
+
+
+<div class="fluid-container">
+    <div class="card">
+        <div class="card-header text-white text-center bg-info"><h4>Booking Details</h4></div>
+
+        <div class="card-body mx-auto">
+
+            <span class="font-weight-bold">Name: </span>
+            <span>{{ booking.author }}</span></br>
+            <span class="font-weight-bold">Phone Model: </span>
+            <span>{{ booking.phone }}</span></br>
+
+          <span class="font-weight-bold">Email address: </span><span>{{ booking.email }}</span></br>
+            <span class="font-weight-bold">Fault: </span><span>{{ booking.fault }}</span></br>
+            <span class="font-weight-bold">Repair Cost: </span><span>€{{ booking.fault.cost }}</span></br>
+            <span class="font-weight-bold">Booking type:</span><span></span> {{ booking.booking_type }}</span></br>
+            <span class="font-weight-bold">Date created: </span><span>{{ booking.created }}</span></br>
+            <span class="font-weight-bold">Booking date: </span><span>{{ booking.booking_date}}</span></br>
+                  {% if booking.comment %}
+            <span class="font-weight-bold">Comment: </span><span>{{ booking.comment}}</span></br>
+                  {% endif %}
+        </div>
+            <div class="card-footer">
+
+
+                <h4 class="text-info">Progress</h4>
+                <div class="progress m-3">
+                    {% if booking.approve_booking == True %}
+    <div class="progress-bar bg-info" style="width:25%">
+      Booking Approved
+    </div>
+                    {% else %}
+                    <div class="progress-bar bg-info" style="width:25%">
+  Waiting for approval
+    </div>
+                    {% endif %}
+                    {% if booking.arrived == True %}
+    <div class="progress-bar bg-info" style="width:25%">
+      Device received</div>
+                    {% endif %}
+                    {% if booking.repaired == True %}
+    <div class="progress-bar bg-info" style="width:25%">
+      Repaired
+    </div>
+                    {% endif %}
+                    {% if booking.repaired == True and booking.collected == False  %}
+    <div class="progress-bar bg-info" style="width:25%">
+      Ready for collection
+    </div>
+    {%elif booking.collected == True %}
+    <div class="progress-bar bg-info" style="width:25%">
+      Collected
+    </div>
+                    {% endif %}
+                </div>
+
+     <h4  class="text-info">Info</h4>
+                 {% if booking.approve_booking == False %}
+                    <p>We will approve your booking shortly.</p>
+                
+                    {% elif booking.approve_booking == True and booking.arrived == False and booking.repaired == False %}
+
+                    <p>Your Booking request was approved. Please bring your device to our shop location.</p>
+
+                    {% elif booking.arrived == True and booking.repaired == False%}
+
+                    <p>We received your device. We will try to repair it as soon as possible.</p>
+
+                    {% elif booking.repaired == True and booking.collected == False %}
+
+                    <p>Your Device is repaired. Please contact the shop to arrange a collection.</p>
+                    
+                    {% elif booking.repaired == True and booking.collected == True %}
+
+                    <p>Your Device is collected. Booking complete.</p>
+
+                    {% endif %}
+            </div>
+         <p class="text-center"><a class="btn bg-info text-white btn-sm" href="{% url 'shop:allProdCat' %}">Home</a>
+          {% if booking.approve_booking == False %} 
+          <a class="btn bg-info text-white btn-sm" href="{% url 'booking:booking_delete' booking.id %}">Cancel Booking</a>
+          {% endif %}
+
+    <a class="btn bg-info text-white btn-sm" href="{% url 'contact:contactus' %}">Contact us</a></p>
+
+        </div>
+</div>
+{% endblock content %}
